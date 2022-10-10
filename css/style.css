@@ -78,32 +78,33 @@ main {
     /* padding-bottom: 100px; */
 
 }
-
-/*-------NuestrasMarcas----------*/
-.contenedorlogos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
 /*-------Main Index----------*/
 
-.cargo img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
 .contenedorportada {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 0.1fr 0.4fr;
+    grid-template-areas: 
+    "cargo cargo cargo cargo"
+    "titulo1 titulo1 titulo1 titulo1"
+    "titulo2 titulo2 titulo2 titulo2"
+    "logos1 logos2 logos3 logos4";
+    /* align-items: center; */
+    margin-bottom: 5%;
     margin-top: 0;
     height: 50%;
     width: 100%;
     object-fit: contain;
+}
+.cargo{
+    grid-area: cargo;
+    width: 100%;
+}
+.cargo img {
+    width: 100%;
+    min-width: 350px;
+    
+    
 }
 
 .tituloencima {
@@ -115,24 +116,106 @@ main {
     max-width: 50%
 }
 
-main h2 {
-    margin-top: 70px;
-    margin-bottom: 20px;
+.titulo1 {
+    max-width: 1400px;
+    width: 90%;
+    margin: 5%;
     font-size: 20px;
     color: grey;
     text-align: center;
+    grid-area: titulo1;
+    width: fit-content;
+    border: 2px solid red;
+    
 }
 
-main h3 {
-    margin-top: 30px;
-    margin-bottom: 70px;
+.titulo2 {
+    max-width: 1400px;
+    width: 90%;
+    margin: 5%;
     font-size: 35px;
     color: grey;
     text-align: center;
+    grid-area: titulo2;
+    border: 2px solid blue;
+}
+.contenedorlogos{
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 90vw;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    border: 2px solid green;
+    
+}
+@keyframes logos1{
+	25%, 75%{
+		transform:scale(0.95);
+	}
+	50%{
+		transform:scale(1.04);
+	}
+}
+.logos1:hover, .logos2:hover, .logos3:hover, .logos4:hover{
+	transform: scale(1.2);
+    
+}
+.logos1 {
+    width: auto;
+    margin: 0 2% 0 0;
+    
+    /* margin-right: 30px; */
+    grid-area: logos1;
+    animation-duration: 2s;
+    animation-name: logos1;
+    transition: 4s;
+    border: 2px solid red;
+    
+}
+.logos2{
+    width: auto;
+    margin: 0 2% 0 0;
+    
+    /* margin-right: 30px; */
+    grid-area: logos2;
+    animation-duration: 2s;
+    animation-name: logos1;
+    transition: 4s;
+    border: 2px solid fuchsia;
 }
 
-.logos {
-    margin-right: 30px;
+.logos3{
+    width: auto;
+    margin: 0 2% 0 0;
+    
+    /* margin-right: 30px; */
+    grid-area: logos3;
+    animation-duration: 2s;
+    animation-name: logos1;
+    transition: 4s;
+    border: 2px solid slateblue;
+    
+    
+}
+.logos4{
+    width: auto;
+    margin: 0 auto;
+    /* margin-right: 30px; */
+    grid-area: logos4;
+    animation-duration: 2s;
+    animation-name: logos1;
+    transition: 4s;
+    border: 1px solid khaki;
+}
+
+.logoimg{
+    height: 90%;
+    width: 100%;
+    border: 1px solid darkorange;
 }
 
 /*-------FOOTER----------*/
@@ -144,6 +227,7 @@ footer {
     color: white;
     font-size: 13px;
     padding: 30px 0px 20px;
+    border: 2px solid sandybrown;
 }
 
 .fila {
@@ -363,7 +447,6 @@ hr {
     height: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* background-color: rgb(254, 189, 22); */
     
 }
 
@@ -406,13 +489,19 @@ hr {
 
 .tarjetas-dewalt h2 {
     text-align: left;
-    margin-bottom: 5px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(110, 107, 107);
+    text-align: center;
 
 }
 
 .tarjetas-dewalt h3 {
     text-align: left;
     margin: 0 0 0 0;
+    font-size: 35px;
+    color: rgb(110, 107, 107);
 }
 
 .tarjetas-dewalt div p {
@@ -523,6 +612,7 @@ hr {
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
+    
 
 }
 
@@ -535,8 +625,17 @@ hr {
     border: 1px solid rgb(186, 180, 180);
 
 }
+.tarjetas-milwaukee h2{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+}
 
 .tarjetas-milwaukee h3 {
+    font-size: 35px;
+    color: grey;
     text-align: left;
     margin: 0 0 0 0;
 }
@@ -698,6 +797,11 @@ textarea {
     .tarjetas-milwaukee div h2 {
         font-size: 18px;
     }
+    /*----INDEX----*/
+    .titulo1 {
+        font-size: 17px;
+        margin-top: 45px;
+    }
 }
 
 
@@ -763,6 +867,29 @@ textarea {
         width: 100%;
         
     }
+    /*----INDEX----*/
+    .titulo1 {
+        font-size: 14px;
+        margin-top: 35px;
+        
+    }
+    .contenedorlogos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 5%;
+        grid-template-areas: 
+        "logos1 logos2"
+        "logos3 logos4";
+        justify-items: stretch;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .logos1, .logos2, .logos3, .logos4{
+        
+    }
+    
 }
 
 
@@ -805,6 +932,13 @@ textarea {
     .tarjetas-dewalt img, .tarjetas-milwaukee img {
         height: 40%;
     }
+
+    /*----INDEX----*/
+    .titulo1 {
+        font-size: 13px;
+        margin-top: 25px;
+    }
+    
 }
 
 
@@ -928,4 +1062,41 @@ textarea {
         background: linear-gradient(to bottom, rgb(134, 127, 127), rgb(36, 30, 30));
     }
 
+    /*----INDEX----*/
+    .contenedorportada{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 350px;
+        
+
+    }
+    .cargo img{
+        width: 100%;
+    }
+    
+    .titulo1 {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    .contenedorlogos{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logos1"
+        "logos2"
+        "logos3"
+        "logos4";
+        justify-items: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .logos1 .logos2 .logos3 .logos4 {
+        width: 70%;
+    }
 }
+
