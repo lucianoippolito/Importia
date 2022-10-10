@@ -75,7 +75,7 @@ nav {
 /*-------MAIN----------*/
 main {
     margin-top: 62px;
-    /* padding-bottom: 100px; */
+    
 
 }
 /*-------Main Index----------*/
@@ -89,7 +89,6 @@ main {
     "titulo1 titulo1 titulo1 titulo1"
     "titulo2 titulo2 titulo2 titulo2"
     "logos1 logos2 logos3 logos4";
-    /* align-items: center; */
     margin-bottom: 5%;
     margin-top: 0;
     height: 50%;
@@ -125,7 +124,6 @@ main {
     text-align: center;
     grid-area: titulo1;
     width: fit-content;
-    border: 2px solid red;
     
 }
 
@@ -137,7 +135,6 @@ main {
     color: grey;
     text-align: center;
     grid-area: titulo2;
-    border: 2px solid blue;
 }
 .contenedorlogos{
     width: 90%;
@@ -147,9 +144,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     min-width: 90vw;
-    /* margin-left: 5%;
-    margin-right: 5%; */
-    border: 2px solid green;
+    
     
 }
 @keyframes logos1{
@@ -173,7 +168,7 @@ main {
     animation-duration: 2s;
     animation-name: logos1;
     transition: 4s;
-    border: 2px solid red;
+    
     
 }
 .logos2{
@@ -185,7 +180,7 @@ main {
     animation-duration: 2s;
     animation-name: logos1;
     transition: 4s;
-    border: 2px solid fuchsia;
+    
 }
 
 .logos3{
@@ -197,7 +192,7 @@ main {
     animation-duration: 2s;
     animation-name: logos1;
     transition: 4s;
-    border: 2px solid slateblue;
+    
     
     
 }
@@ -209,13 +204,12 @@ main {
     animation-duration: 2s;
     animation-name: logos1;
     transition: 4s;
-    border: 1px solid khaki;
 }
 
 .logoimg{
     height: 90%;
     width: 100%;
-    border: 1px solid darkorange;
+    
 }
 
 /*-------FOOTER----------*/
@@ -227,7 +221,7 @@ footer {
     color: white;
     font-size: 13px;
     padding: 30px 0px 20px;
-    border: 2px solid sandybrown;
+    
 }
 
 .fila {
