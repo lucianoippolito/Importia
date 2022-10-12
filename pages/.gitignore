@@ -1,5 +1,7 @@
 # archivos de texto
 *.txt
+bootstrapgrid.html
+bootstrapgrid.css
 
 # carpeta node_modules
 node_modules/

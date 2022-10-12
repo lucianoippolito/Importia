@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Georgian:wght@200;400;600;800&display=swap');
+
 
 * {
     margin: 0;
@@ -8,8 +8,6 @@
 }
 
 /*-------Navbar Bootstrap--------*/
-/* .logo-nav{
-    height: 50px;} */
 
     .navbar-collapse{
         background-color: rgb(248, 249, 250);
@@ -17,11 +15,16 @@
         border-bottom-right-radius: 25px;
 
     }
+    .navbar {
+        padding-bottom: 0;
+        padding-left: 0;
+        
+        
+    }
 
     nav {
         font-family: fira sans;
         background: rgb(248, 249, 250);
-        
         width: 100%;
         position: fixed;
         z-index: 100;
@@ -41,22 +44,54 @@
     .iconos-redes {
         color: darkslategray;
     }
-    /* .linea-header{
-        width: auto;
-    } */
+
     .container-fluid {
         background-color: rgb(248, 249, 250);
-        height: 62px;
-        /* border-bottom : 1px solid gray; */
+        /* height: 62px; */
+        border-bottom : 1px solid gray;
+    }
+
+    .seccion-foto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .seccion-foto img{
+        display: block;
+        margin: auto;
+        padding: 0% 5% 5% 5%;
+        width: 90%;
+    }
+    .container-fluid{
+        padding: 0%;
+    }
+    
+    .seccion-texto{
+        margin-top: 5%;
+    }
+    .seccion-texto p{
+        margin-top: 5%;
+        padding: 0% 10% 5% 10%;
+        font-family: fira sans;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: justify;
+        color: rgb(60, 57, 57)
+    }
+    .empresa-h3{
+        padding: 5% 5% 0% 5%;
+        text-align: center;
+        font-family: fira sans;
+        font-size: 35px;
+        font-weight: bold;
+        color: grey;
     }
 
 
 
 
     /*-------MAIN----------*/
-    /* main {
-    margin-top: 79px;
-    } */
 
 
 /*-------Main Index----------*/
@@ -213,11 +248,10 @@ footer {
     margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.2fr 0.5fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "c1 c2 c3 c4"
-    "redes redes redes redes"
-    "social social social social"
+    
 }
 
 .columna-a{
@@ -253,7 +287,7 @@ footer {
     grid-template-areas:
     "icon1 icon2";
 }
-.icon-fila-1 {
+/* .icon-fila-1 {
     grid-area: icon1;
     display: flex;
     flex-direction: row;
@@ -265,7 +299,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-}
+} */
 
 .logofooter {
     width: 150px;
@@ -288,6 +322,11 @@ footer {
     width: fit-content;
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
+    
+}
+
+input{
+    background-color:#8080801c;
 }
 
 ul li {
@@ -376,7 +415,45 @@ hr {
 
 
 /*-------Empresa----------*/
+/* empresa bootstrap grid 
+.seccion-foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-foto img{
+    display: block;
+    margin: auto;
+    padding: 0% 5% 5% 5%;
+    width: 90%;
+}
+.container-fluid{
+}
 
+.seccion-texto{
+    margin-top: 5%;
+}
+.seccion-texto p{
+    margin-top: 5%;
+    padding: 0% 10% 5% 10%;
+    font-family: fira sans;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    color: rgb(60, 57, 57)
+}
+.empresa-h3{
+    padding: 5% 5% 0% 5%;
+    text-align: center;
+    font-family: fira sans;
+    font-size: 35px;
+    font-weight: bold;
+    color: grey;
+}
+
+
+/*-------fin -----------*/
 .contenedor-empresa {
 
     display: grid;
@@ -552,12 +629,38 @@ hr {
     height: 90%;
     /* background-color: (rgb(219, 2, 29)); */
 }
+.milwaukee-banner-inferior{
+    position: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 2% 0 2% 0;
+    margin: 2% 10% 2% 10%;
+    background-color: #DB021D;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.milwaukee-banner-inferior img{
+    height: 50%;
+}
+.milwaukee-banner-inferior h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    position: relative;
+    
+    
+    
+}
+
 
 .milwaukee-portada {
     background-image: url(../img/milw_portada2.jpeg);
-    /* position: relative;
-    background-size: cover;
-    height: 500px; */
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -589,7 +692,6 @@ hr {
     height: auto;
     width: 100%;
     padding-bottom: 10%;
-    /* height: 1700px; */
 }
 
 .tarjetas-milwaukee {
@@ -605,7 +707,7 @@ hr {
 }
 
 .tarjetas-milwaukee img {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.112);
     object-fit: contain;
     padding: 2%;
     width: 100%;
@@ -622,6 +724,8 @@ hr {
 }
 
 .tarjetas-milwaukee h3 {
+    font-family: bebas neue;
+    font-weight: bold;
     font-size: 35px;
     color: grey;
     text-align: left;
@@ -629,6 +733,7 @@ hr {
 }
 
 .tarjetas-milwaukee p {
+    font-family: noto sans georgian;
     font-size: 16px;
     text-align: left;
     width: 100%;
@@ -1079,7 +1184,11 @@ textarea {
         margin-left: 5%;
         margin-right: 5%;
     }
-
+    .logoimg{
+        height: 90%;
+        width: 70%;
+        
+    }
     .logos1 .logos2 .logos3 .logos4 {
         width: 70%;
     }
