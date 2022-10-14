@@ -14,18 +14,68 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo-chico">
-                <a href="../index.html"><img src="../img/importia.png" alt="LogoImportia"></a>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo-nav" src="../img/importia.png"
+                        alt="LogoImportia"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/empresa.html">Empresa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown"
+                                role="button" data-bs-toggle="dropdown">Productos</a>
+                            <ul class="dropdown-menu bg-light">
+                                <li><a class="dropdown-item" href="../pages/dewalt.html">Dewalt</a></li>
+                                <li><a class="dropdown-item" href="/pages/milwaukee.html">Milwaukee</a></li>
+                                <li><a class="dropdown-item" href="#">Makita</a></li>
+                                <li><a class="dropdown-item" href="#">Metabo</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav flex-row flex-wrap text-dark">
+
+                        <li class="nav-item col-4 col-md-auto p-3"><a class="iconos-redes"
+                                href="https://www.facebook.com" target="_blank">
+                                <i class="bi bi-facebook"></i></a>
+                            <small class="d-md-none ms-2">Facebook</small>
+                        </li>
+
+                        <li class="nav-item col-4 col-md-auto p-3"><a class="iconos-redes"
+                                href="https://www.instagram.com" target="_blank">
+                                <i class="bi bi-instagram"></i></a>
+                            <small class="d-md-none ms-2">Instagram</small>
+                        </li>
+
+                        <li class="nav-item col-4 col-md-auto p-3"><a class="iconos-redes"
+                                href="https://web.whatsApp.com" target="_blank">
+                                <i class="bi bi-whatsapp"></i></a>
+                            <small class="d-md-none ms-2">WhatsApp</small>
+                        </li>
+
+                        <li class="nav-item col-4 col-md-auto p-3"><a class="iconos-redes"
+                                href="https://web.telegram.org/k/" target="_blank">
+                                <i class="bi bi-telegram"></i></a>
+                            <small class="d-md-none ms-2">Telegram</small>
+                        </li>
+
+                        <li class="nav-item col-4 col-md-auto p-3"><a class="iconos-redes"
+                                href="https://goo.gl/maps/FAXBPRThVUv7G2Fv5" target="_blank">
+                                <i class="bi bi-geo-alt-fill"></i></a>
+                            <small class="d-md-none ms-2">Como Llegar</small>
+                        </li>
+
+                    </ul>
+
+                </div>
             </div>
-            <div class="navegador">
-                <ul>
-                    <li><a href="../pages/empresa.html">Empresa</a></li>
-                    <li><a href="../pages/dewalt.html">Catálogo Dewalt</a></li>
-                    <li><a href="../pages/milwaukee.html">Catálogo Milwaukee</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+
         </nav>
     </header>
     <main>
@@ -59,49 +109,26 @@
         </div>
     </main>
     <footer>
-        <div class="fila">
-            <div class="columna-a">
-                <img class="logofooter" src="../img/logoimportiablanco.png" class="logofooter" alt="logoimportiafooter">
-            </div>
-            <div class="columna-b">
-                <h3>Oficina</h3>
-                <p>Av. Olazábal 5068</p>
-                <p>Ciudad Autónoma de Buenos Aires</p>
-                <p>C1431CGT - Argentina</p>
-                <p class="email">info@importia.com.ar</p>
-                <h4>Teléfono +541121895473</h4>
-            </div>
-            <div class="columna-c">
-                <h3>Horarios de Atención</h3>
-                <p>Lunes a Viernes de 8 a 18 hs</p>
-                <p>Sábados de 8 a 12:30 hs</p>
-            </div>
-            <div class="columna-d">
-                <h3>Newsletter</h3>
-                <form>
-                    <div class="newsletter-email">
-                        <input type="email" placeholder="Ingrese su email">
-                    </div>
-                    <div class="boton-newsletter">
-                        <a href=""><img src="../img/flecha.png" alt="Suscribirse"></a>
-                    </div>
-                </form>
-            </div>
-            <div class="columna-e">
-                <div class="redes">
-                    <!-- <h3>Nuestras Redes</h3> -->
+        <div class="container">
+            <div class="row">
+                <div class=" logo-importia-blanco col-lg-3 col-md-6 col-sm-12 gx-5">
+                    <img src="../img/logoimportiablanco.png" class="img-fluid mx-auto d-block" alt="">
                 </div>
-            </div>
-            <div class="columna-f">
-                <div class="icon-fila-1">
-                    <a href="https://www.facebook.com" target="_blank"><img src="../img/f_facebook.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="../img/f_instagram.png" alt="Instagram"></a>
-                    <a href="https://goo.gl/maps/FAXBPRThVUv7G2Fv5" target="_blank"><img src="../img/f_map.png" alt="Como llegar"></a>
+                <div class="col-lg-3 col-md-6 col-sm-12 gx-5">
+                    <h6 class="text-md-start text-center" style="font-weight:bold">Oficina</h6>
+                    <p class="lh-1 text-md-start text-center">Av. Olazábal 5068</p>
+                    <p class="lh-1 text-md-start text-center">Ciudad Autónoma de Buenos Aires</p>
+                    <p class="lh-1 text-md-start text-center">C1431CGT - Argentina</p>
+                    <p class="lh-1 text-md-start text-center" class="email">info@importia.com.ar</p>
                 </div>
-                <div class="icon-fila-2">
-                    <a href="https://www.twitter.com" target="_blank"><img src="../img/f_twitter.png" alt="Twitter"></a>
-                    <a href="https://www.telegram.com" target="_blank"><img src="../img/f_telegram.png" alt="Telegram"></a>
-                    <a href="https:/web.whatsapp.com" target="_blank"><img src="../img/whatsapp.png" alt="whatsapplogo"></a>
+                <div class="col-lg-3 col-md-6 col-sm-12 gx-5">
+                    <h6 class="text-md-start text-center" style="font-weight:bold">Horarios de Atención</h6>
+                    <p class="lh-1 text-md-start text-center">Lunes a Viernes de 8 a 18 hs</p>
+                    <p class="lh-1 text-md-start text-center">Sábados de 8 a 12:30 hs</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 gx-5">
+                    <h6 class="text-md-start text-center" style="font-weight:bold"></h6>
+                    <h6 class="text-md-start text-center" style="font-weight:bold">Teléfono +541121895473</h6>
                 </div>
             </div>
         </div>
