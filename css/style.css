@@ -160,6 +160,11 @@ nav {
     grid-area: titulo2;
 }
 
+.titulo2 h3{
+    font-size: 45px;
+    text-align: center;
+}
+
 .contenedorlogos {
     position: relative;
     width: 90%;
@@ -653,9 +658,10 @@ textarea {
     }
 
     /*----INDEX----*/
-    .titulo1 {
-        font-size: 17px;
+    .titulo1 h2{
+        font-size: 30px;
         margin-top: 45px;
+        text-align: center;
     }
 }
 
@@ -720,9 +726,10 @@ textarea {
     }
 
     /*----INDEX----*/
-    .titulo1 {
-        font-size: 14px;
+    .titulo1 h2 {
+        font-size: 28px;
         margin-top: 35px;
+        text-align: center;
 
     }
 
@@ -796,9 +803,14 @@ textarea {
 
 
     /*----INDEX----*/
-    .titulo1 {
-        font-size: 13px;
+    .titulo1 h2 {
+        font-size: 22px;
         margin-top: 25px;
+        text-align: center;
+    }
+    .titulo2 h3{
+        font-size: 35px;
+        text-align: center;
     }
 
 }
@@ -866,13 +878,13 @@ textarea {
         width: 100%;
     }
 
-    .titulo1 {
-        font-size: 11px;
+    .titulo1 h2 {
+        font-size: 12px;
         margin-top: 15px;
     }
 
-    .titulo2 {
-        font-size: 20px;
+    .titulo2 h3{
+        font-size: 19px;
     }
 
     .contenedorlogos {
