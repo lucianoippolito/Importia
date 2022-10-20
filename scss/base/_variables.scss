@@ -1,0 +1,30 @@
+
+/* -- paleta de color -- */
+$color-dw: #febd16;
+$color-dw-cards-bkg:white;
+$color-dw-cards-ctn:#EEEEEE;
+$color-mw: rgb(219, 2, 29);
+$color-mw-cards-bkg:#323232;
+$color-mw-cards-ctn:rgb(31, 29, 29);
+
+/* -- keyframes -- */
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 0%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+@mixin card-makita-p {
+    font-size: 14px;
+    text-align: left;
+    }
+@mixin card-makita-img {
+    padding: 10%;
+}

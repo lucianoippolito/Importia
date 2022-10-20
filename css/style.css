@@ -31,17 +31,15 @@
 }
 
 .navbar-brand {
-    padding-left: 4%;
+    padding-left: 2%;
 }
 
 nav {
     font-family: fira sans;
     background: rgb(248, 249, 250);
     width: 100%;
-    position: fixed;
-    z-index: 100;
     padding-left: 50px;
-}
+} 
 
 
 .logo-nav {
@@ -67,47 +65,7 @@ nav {
 .container-fluid {
     background-color: rgb(248, 249, 250);
     border-bottom: 1px solid gray;
-}
-
-.seccion-foto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.seccion-foto img {
-    display: block;
-    margin: auto;
-    padding: 0% 5% 5% 5%;
-    width: 90%;
-}
-
-.container-fluid {
     padding: 0%;
-}
-
-.seccion-texto {
-    margin-top: 5%;
-}
-
-.seccion-texto p {
-    margin-top: 5%;
-    padding: 0% 10% 5% 10%;
-    font-family: fira sans;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: justify;
-    color: rgb(60, 57, 57)
-}
-
-.empresa-h3 {
-    padding: 5% 5% 0% 5%;
-    text-align: center;
-    font-family: fira sans;
-    font-size: 35px;
-    font-weight: bold;
-    color: grey;
 }
 
 /*-------Main Index----------*/
@@ -165,7 +123,7 @@ nav {
     text-align: center;
 }
 
-.contenedorlogos {
+.contenedor-logos {
     position: relative;
     width: 90%;
     margin: 5%;
@@ -250,10 +208,6 @@ footer {
     padding: 30px 0px 20px;
 }
 
-.logofooter {
-    width: 150px;
-    transition: 1s;
-}
 
 .logo-importia-blanco img {
     width: 150px;
@@ -264,31 +218,6 @@ footer {
     transform: scale(1.1);
 }
 
-.columna h3 {
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.email {
-    width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
-}
-
-input {
-    background-color: #8080801c;
-}
-
-ul li {
-    list-style: none;
-}
-
-ul li a {
-    text-decoration: none;
-    color: white;
-}
-
 hr {
     width: 90%;
     border: 0px;
@@ -296,53 +225,74 @@ hr {
     margin: 15px auto 20px;
 }
 
+/* ---- EMPRESA ---*/
 
-/*-------Empresa----------*/
-
-.contenedor-empresa {
-
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 70% 30%;
-    column-gap: 50px;
-    margin-bottom: 120px;
+.seccion-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.h3 {
-    margin-top: 30px;
-    margin-bottom: 70px;
-    font-size: 35px;
-    color: grey;
-    text-align: center;
+.seccion-foto img {
+    display: block;
+    margin: auto;
+    padding: 0% 5% 5% 5%;
+    width: 90%;
 }
 
-.textos-empresa {
-    width: 500px;
-    height: auto;
-    margin-left: 20%;
+.seccion-texto {
+    margin-top: 5%;
+} 
 
-}
-
-.textos-empresa p {
+.seccion-texto p {
+    margin-top: 5%;
+    padding: 0% 10% 5% 10%;
+    font-family: fira sans;
     font-size: 15px;
-    text-align: left;
+    font-weight: 400;
+    text-align: justify;
+    color: rgb(60, 57, 57)
 }
 
-.foto-empresa img {
-    padding-top: 143px;
-    padding-bottom: 150px;
-    width: 600px;
-    margin-top: 0;
-    object-fit: cover;
+.empresa-h3 {
+    padding: 5% 5% 0% 5%;
+    text-align: center;
+    font-family: fira sans;
+    font-size: 35px;
+    font-weight: bold;
+    color: grey;
 }
 
 /*-------Productos Dewalt----------*/
-.fondo-banner-dw {
-    background-color: #EEEEEE;
-    padding: 0.5rem 0 0.5rem 0;
+
+.dw-productos-contenedor {
+    height: auto;
+    width: 100%;
+    padding-bottom: 10%;
 }
 
-.dewalt-banner-inferior {
+.dw-sup-fondo {
+    width: 100%;
+}
+
+.dw-banner-superior {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    background-color: rgb(254, 189, 22);
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.dw-logo {
+    display: flex;
+    width: 160px;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dw-banner-medio {
     position: flex;
     flex-direction: column;
     align-items: center;
@@ -356,13 +306,13 @@ hr {
     background-position: center;
 }
 
-.dewalt-banner-inferior img {
+.dw-banner-medio img {
     height: 50%;
     width: 25%;
     background-color: black;
 }
 
-.dewalt-banner-inferior h2 {
+.dw-banner-medio h2 {
     font-family: bebas neue;
     font-size: 35px;
     color: black;
@@ -371,68 +321,56 @@ hr {
     position: relative;
 }
 
-.dewalt-banner-inferior2 {
+.dw-inf-fondo {
+    background-color: #EEEEEE;
+    padding: 0.5rem 0 0.5rem 0;
+}
+.dw-banner-inferior {
     width: 100%;
     padding: 2% 0 2% 0;
     margin: 2% 0% 2% 0%;
     background-color: #febd16;
 }
-
-.dewalt-banner-inferior2 img {
+.dw-banner-inferior img {
     display: block;
     margin: 0 auto;
-
-}
-
-.dewalt-main {
-    width: 100%;
-}
-
-.productos-dewalt-contenedor {
-    height: auto;
-    width: 100%;
-    padding-bottom: 10%;
-}
-
-.dewalt-banner {
-    display: flex;
-    width: 160px;
-    height: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-
-}
-
-.banner-amarillo-dewalt {
-    display: flex;
-    justify-content: center;
-    height: 90%;
-    width: 100%;
-    background-color: rgb(254, 189, 22);
-    animation-duration: 3s;
-    animation-name: slidein;
 }
 
 .card img {
     padding: 10%;
-
 }
 /*-------Productos Milwaukee----------*/
+.mw-productos-contenedor {
+    background-color: rgba(0, 0, 0, 0.907);
+    height: auto;
+    width: 100%;
+    padding-bottom: 10%;
+}
+.mw-sup-fondo{
+    width: 100%;
+}
+.mw-banner-superior {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    background-color: (rgb(219, 2, 29));
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.mw-banner-superior {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: rgb(219, 2, 29);
+}
 
 .col {
     padding-bottom: 5%;
 }
 
-.banner-rojo-milwaukee {
-    background-color: (rgb(219, 2, 29));
-    display: flex;
-    justify-content: center;
-    height: 70px;
-    width: 100%;
-    animation-duration: 3s;
-    animation-name: slidein;
-}
+
 
 @keyframes slidein {
     from {
@@ -446,12 +384,12 @@ hr {
     }
 }
 
-.milwaukee-banner {
+.mw-logo {
     padding-top: 1%;
     height: 90%;
 }
 
-.milwaukee-banner-inferior {
+.mw-banner-medio {
     position: flex;
     flex-direction: column;
     align-items: center;
@@ -466,11 +404,11 @@ hr {
 
 }
 
-.milwaukee-banner-inferior img {
+.mw-banner-medio img {
     height: 50%;
 }
 
-.milwaukee-banner-inferior h2 {
+.mw-banner-medio h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
@@ -479,24 +417,24 @@ hr {
     position: relative;
 }
 
-.cards {
-    position: relative;
-    height: auto;
+.mw-inf-fondo {
+    background-color:#181818;
+    padding: 0.5rem 0 0.5rem 0;
 }
-
-.productos-milwaukee-contenedor {
-    background-color: rgba(0, 0, 0, 0.907);
-    height: auto;
+.mw-banner-inferior {
     width: 100%;
-    padding-bottom: 10%;
+    padding: 8% 0 2% 0;
+    margin: 2% 0% 2% 0%;
+    background-color: #181818;
+}
+.mw-banner-inferior img {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    width: 100%;
 }
 
-.banner-rojo-milwaukee {
-    display: flex;
-    justify-content: center;
-    height: 70px;
-    background-color: rgb(219, 2, 29);
-}
+
 
 /*-----CONTACTO--------*/
 
@@ -627,37 +565,12 @@ textarea {
 
 @media screen and (max-width:1150px) {
 
-    .tarjetas-dewalt div p {
-        width: auto;
-        font-size: 15px;
-    }
-
-    .dewalt-portada {
-        height: 500px;
-    }
-
-    .tarjetas-dewalt div h2 {
-        font-size: 18px;
-    }
-
+    /*----INDEX----*/
     main h3 {
         font-size: 25px;
     }
 
-    .tarjetas-milwaukee div p {
-        width: auto;
-        font-size: 15px;
-    }
-
-    .milwaukee-portada {
-        height: 500px;
-    }
-
-    .tarjetas-milwaukee div h2 {
-        font-size: 18px;
-    }
-
-    /*----INDEX----*/
+    
     .titulo1 h2{
         font-size: 30px;
         margin-top: 45px;
@@ -670,70 +583,14 @@ textarea {
         min-width: 100vw;
     }
 
-    .dewalt-portada {
-        height: 400px;
-    }
-
-    .tarjetas-dewalt {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .tarjetas-dewalt img {
-        width: 100%;
-
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-        margin-right: 0;
-    }
-
-    .navegador ul {
-        margin-right: 0;
-    }
-
-    .fila {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 0.3fr 0.3fr;
-        grid-template-areas:
-            "c1 c2 c3"
-            "c1 c2 c4"
-            "redes redes redes"
-            "social social social";
-        justify-items: stretch;
-    }
-
-    /*milwaukee*/
-    .milwaukee-portada {
-        height: 400px;
-    }
-
-    .tarjetas-milwaukee {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .tarjetas-milwaukee img {
-        width: 100%;
-
-    }
-
     /*----INDEX----*/
     .titulo1 h2 {
         font-size: 28px;
         margin-top: 35px;
         text-align: center;
-
     }
 
-    .contenedorlogos {
+    .contenedor-logos {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -768,33 +625,6 @@ textarea {
         margin: 0 auto;
     }
 
-    .dewalt-portada {
-        height: 300px;
-    }
-
-    .whatsapp img {
-        position: relative;
-    }
-
-    nav {
-        position: relative;
-    }
-
-    .fila {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.2fr 0.2fr;
-        grid-template-areas:
-            "c1 c3"
-            "c2 c4"
-            "redes redes"
-            "social social"
-    }
-
-    .milwaukee-portada {
-        height: 300px;
-    }
-
     /*---- CONTACTO -----*/
     .columna1 {
         min-width: 65vw;
@@ -820,47 +650,7 @@ textarea {
         padding-bottom: 0px;
     }
 
-    .dewalt-banner-inferior h2 {
-        font-size: 15px;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 0;
-        margin-right: 0;
-    }
-
-    .fila {
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr 0.2fr;
-        grid-template-areas:
-            "c1"
-            "c2"
-            "c3"
-            "c4"
-            "redes"
-            "social";
-    }
-
-    .email {
-        width: auto;
-        border-bottom: none;
-    }
-
-    .redes h3 {
-        margin-bottom: 5px;
-    }
-
-    .dewalt-portada {
-        height: 200px;
-    }
-
+    
     footer {
         background: linear-gradient(to bottom, rgb(134, 127, 127), rgb(36, 30, 30));
         min-width: 350px;
@@ -887,15 +677,15 @@ textarea {
         font-size: 19px;
     }
 
-    .contenedorlogos {
+    .contenedor-logos {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-            "logos1"
-            "logos2"
-            "logos3"
-            "logos4";
+        "logos1"
+        "logos2"
+        "logos3"
+        "logos4";
         justify-items: center;
         align-items: center;
         width: 90%;
@@ -906,14 +696,23 @@ textarea {
     .logoimg {
         height: 90%;
         width: 70%;
-
     }
 
     .logos1 .logos2 .logos3 .logos4 {
         width: 70%;
     }
 
+    /*--- EMPRESA ---*/
+
     .columna1 {
         width: 100vw;
+    }
+
+    /*--- DEWALT ---*/
+
+    .dewalt-banner-inferior h2 {
+        font-size: 15px;
+        width: 80%;
+        margin: 0 auto;
     }
 }
