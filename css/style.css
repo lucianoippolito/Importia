@@ -114,7 +114,7 @@ nav {
 
 .contenedorportada {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.3fr 0.1fr 0.4fr;
     grid-template-areas:
         "cargo cargo cargo cargo"
@@ -743,8 +743,8 @@ textarea {
             "logos3 logos4";
         justify-items: stretch;
         width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        padding-left: 8%;
+        padding-right: 8%;
     }
 
     /*---- CONTACTO -----*/
