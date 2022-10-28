@@ -3,20 +3,19 @@
 .dw-productos-contenedor{
     height: auto;
     width: 100%;
-    padding-bottom: 10%;
     .dw-sup-fondo{
         width: 100%;
+        background-color: #FEBD16;
         .dw-banner-superior{
             display: flex;
             justify-content: center;
-            height: 90%;
-            width: 100%;
-            background-color: rgb(254, 189, 22);
+            // height: 90%;
+            // width: 100%;
+            // background-color:#FEBD16;
             animation-duration: 3s;
             animation-name: slidein;
             .dw-logo{
-                display: flex;
-                width: 15%;
+                width: 13%;
                 height: 80%;
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -30,8 +29,8 @@
         justify-content: center;
         width: 80%;
         padding: 2% 0 2% 0;
-        margin: 2% 10% 2% 10%;
-        background-color: #febd16;
+        margin: 2% 10% 0% 10%;
+        background-color: #FEBD16;
         text-align: center;
         background-repeat: no-repeat;
         background-position: center;
@@ -49,22 +48,29 @@
             position: relative;
         }
     }
+    .titulo-catalogo p {
+        @include productos (#000);
+    }
+    
     .card{
         img{
-            padding: 10%;
+            @include card-dewalt-img;
+        }
+        .card-text{
+            @include card-dewalt-p;
         }
     }
     .dw-inf-fondo{
-        background-color: #EEEEEE;
-        padding: 0.5rem 0 0.5rem 0;
+        
+        padding: 0.5rem 0 0 0;
         .dw-banner-inferior{
             width: 100%;
-            padding: 2% 0 2% 0;
-            margin: 8% 0% 2% 0%;
-            background-color: #febd16;            
+            object-fit: contain;
+            padding-top: 2%;
+            margin-top: 8%;
+            background-color:#FEBD16;            
             img{
-                display: block;
-                margin: 0 auto;
+                @include banner-inferior;
             }
         }
     }

@@ -9,10 +9,22 @@
 @keyframes slidein {
   from {
     margin-left: 50%;
-    width: 0%; }
+    width: 0%;
+    height: 0%; }
   to {
     margin-left: 0%;
-    width: 100%; } }
+    width: 100%;
+    height: 100%; } }
+
+@keyframes slideout {
+  from {
+    margin-left: 50%;
+    width: 0%;
+    height: 0%; }
+  to {
+    margin-left: 0%;
+    width: 100%;
+    height: 100%; } }
 
 /* --- HEADER ---*/
 header .navbar {
@@ -234,21 +246,17 @@ main .grid-contacto-contenedor {
 /* ---- DEWALT ----*/
 .dw-productos-contenedor {
   height: auto;
-  width: 100%;
-  padding-bottom: 10%; }
+  width: 100%; }
   .dw-productos-contenedor .dw-sup-fondo {
-    width: 100%; }
+    width: 100%;
+    background-color: #FEBD16; }
     .dw-productos-contenedor .dw-sup-fondo .dw-banner-superior {
       display: flex;
       justify-content: center;
-      height: 90%;
-      width: 100%;
-      background-color: #febd16;
       animation-duration: 3s;
       animation-name: slidein; }
       .dw-productos-contenedor .dw-sup-fondo .dw-banner-superior .dw-logo {
-        display: flex;
-        width: 15%;
+        width: 13%;
         height: 80%;
         padding-top: 10px;
         padding-bottom: 10px; }
@@ -259,8 +267,8 @@ main .grid-contacto-contenedor {
     justify-content: center;
     width: 80%;
     padding: 2% 0 2% 0;
-    margin: 2% 10% 2% 10%;
-    background-color: #febd16;
+    margin: 2% 10% 0% 10%;
+    background-color: #FEBD16;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center; }
@@ -275,24 +283,38 @@ main .grid-contacto-contenedor {
       text-align: center;
       margin-top: 2%;
       position: relative; }
+  .dw-productos-contenedor .titulo-catalogo p {
+    color: #000;
+    font-family: bebas neue;
+    font-size: 60px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    padding-top: 5%; }
   .dw-productos-contenedor .card img {
     padding: 10%; }
+  .dw-productos-contenedor .card .card-text {
+    font-size: 14px;
+    text-align: left; }
   .dw-productos-contenedor .dw-inf-fondo {
-    background-color: #EEEEEE;
-    padding: 0.5rem 0 0.5rem 0; }
+    padding: 0.5rem 0 0 0; }
     .dw-productos-contenedor .dw-inf-fondo .dw-banner-inferior {
       width: 100%;
-      padding: 2% 0 2% 0;
-      margin: 8% 0% 2% 0%;
-      background-color: #febd16; }
+      object-fit: contain;
+      padding-top: 2%;
+      margin-top: 8%;
+      background-color: #FEBD16; }
       .dw-productos-contenedor .dw-inf-fondo .dw-banner-inferior img {
         display: block;
+        width: 100%;
         margin: 0 auto; }
 
 /* ---- MAKITA ----*/
 .mk-productos-contenedor {
   height: auto;
-  width: 100%; }
+  width: 100%;
+  background-color: #ddeded; }
   .mk-productos-contenedor .mk-sup-fondo {
     width: 100%;
     background-color: #0285A2; }
@@ -305,8 +327,7 @@ main .grid-contacto-contenedor {
       animation-duration: 3s;
       animation-name: slidein; }
       .mk-productos-contenedor .mk-sup-fondo .mk-banner-superior .mk-logo {
-        display: flex;
-        width: 15%;
+        width: 14%;
         height: 80%;
         padding-top: 10px;
         padding-bottom: 10px; }
@@ -317,12 +338,11 @@ main .grid-contacto-contenedor {
     justify-content: space-around;
     width: 100%;
     padding: 1% 0 1% 0;
-    margin: 3% 0 10% 0;
     background-color: #0285A2;
     text-align: center;
     background-position: center; }
     .mk-productos-contenedor .mk-banner-medio img {
-      width: 10%;
+      width: 9%;
       background-color: #0285A2; }
     .mk-productos-contenedor .mk-banner-medio h2 {
       font-family: inherit;
@@ -331,6 +351,15 @@ main .grid-contacto-contenedor {
       color: white;
       text-align: center;
       position: relative; }
+  .mk-productos-contenedor .titulo-catalogo p {
+    color: #0285A2;
+    font-family: bebas neue;
+    font-size: 60px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    padding-top: 5%; }
   .mk-productos-contenedor .card img {
     padding: 10%; }
   .mk-productos-contenedor .card .card-text {
@@ -343,39 +372,107 @@ main .grid-contacto-contenedor {
       width: 100%;
       object-fit: contain;
       padding: 0;
-      margin: 8% 0% 0% 0%; }
+      margin: 8% 0 0 0; }
       .mk-productos-contenedor .mk-inf-fondo .mk-banner-inferior img {
-        width: 100%;
         display: block;
+        width: 100%;
+        margin: 0 auto; }
+
+/* ---- MAKITA ----*/
+.mt-productos-contenedor {
+  height: auto;
+  width: 100%;
+  background-color: #dde6e5; }
+  .mt-productos-contenedor .mt-sup-fondo {
+    width: 100%;
+    background-color: #1F4942; }
+    .mt-productos-contenedor .mt-sup-fondo .mt-banner-superior {
+      display: flex;
+      justify-content: center;
+      height: 90%;
+      width: 100%;
+      background-color: #1F4942;
+      animation-duration: 3s;
+      animation-name: slidein; }
+      .mt-productos-contenedor .mt-sup-fondo .mt-banner-superior .mt-logo {
+        display: flex;
+        width: 14%;
+        height: 80%;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+  .mt-productos-contenedor .mt-banner-medio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2% 0 2% 0;
+    background-color: #1F4942;
+    text-align: center;
+    background-position: center; }
+    .mt-productos-contenedor .mt-banner-medio img {
+      width: 10%;
+      background-color: #1F4942; }
+    .mt-productos-contenedor .mt-banner-medio h2 {
+      font-family: inherit;
+      font-weight: bolder;
+      font-size: 35px;
+      color: white;
+      text-align: center;
+      position: relative; }
+  .mt-productos-contenedor .titulo-catalogo p {
+    color: #1F4942;
+    font-family: bebas neue;
+    font-size: 60px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    padding-top: 5%; }
+  .mt-productos-contenedor .card img {
+    padding: 10%; }
+  .mt-productos-contenedor .card .card-text {
+    font-size: 14px;
+    text-align: left; }
+  .mt-productos-contenedor .mt-inf-fondo {
+    background-color: #e41919;
+    padding: 0; }
+    .mt-productos-contenedor .mt-inf-fondo .mt-banner-inferior {
+      width: 100%;
+      object-fit: contain;
+      padding: 0;
+      margin: 8% 0% 0% 0%; }
+      .mt-productos-contenedor .mt-inf-fondo .mt-banner-inferior img {
+        display: block;
+        width: 100%;
         margin: 0 auto; }
 
 /* ---- MILWAUKEE ---- */
 .mw-productos-contenedor {
-  background-color: rgba(0, 0, 0, 0.907);
+  background-color: #000000;
   height: auto;
-  width: 100%;
-  padding-bottom: 10%; }
+  width: 100%; }
   .mw-productos-contenedor .mw-sup-fondo {
-    width: 100%; }
+    width: 100%;
+    background-color: #DB021D; }
     .mw-productos-contenedor .mw-sup-fondo .mw-banner-superior {
       display: flex;
       justify-content: center;
-      height: 70px;
       width: 100%;
-      background-color: #db021d;
       animation-duration: 3s;
       animation-name: slidein; }
       .mw-productos-contenedor .mw-sup-fondo .mw-banner-superior .mw-logo {
-        padding-top: 1%;
-        height: 90%; }
+        width: 9%;
+        padding-top: 5px;
+        padding-bottom: 5px; }
   .mw-productos-contenedor .mw-banner-medio {
-    position: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 80%;
     padding: 2% 0 2% 0;
-    margin: 2% 10% 2% 10%;
+    margin: 2% 10% 0% 10%;
     background-color: #DB021D;
     text-align: center;
     background-repeat: no-repeat;
@@ -389,19 +486,26 @@ main .grid-contacto-contenedor {
       text-align: center;
       margin-top: 2%;
       position: relative; }
+  .mw-productos-contenedor .titulo-catalogo p {
+    color: #eee;
+    font-family: bebas neue;
+    font-size: 60px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    padding-top: 5%; }
   .mw-productos-contenedor .mw-inf-fondo {
-    background-color: #181818;
-    padding: 0.5rem 0 0.5rem 0; }
+    background-color: #000000; }
   .mw-productos-contenedor .mw-banner-inferior {
     width: 100%;
-    padding: 8% 0 2% 0;
-    margin: 2% 0% 2% 0%;
-    background-color: #181818; }
+    padding: 8% 0 0% 0;
+    margin: 2% 0% 0% 0%;
+    background-color: #000000; }
     .mw-productos-contenedor .mw-banner-inferior img {
       display: block;
-      margin: 0 auto;
-      object-fit: contain;
-      width: 100%; }
+      width: 100%;
+      margin: 0 auto; }
 
 /* -- EMPRESA -- */
 .container-fluid {
@@ -495,14 +599,6 @@ footer {
     min-width: 350px; }
   main {
     margin-top: 0; }
-  .dw-banner-medio h2 {
-    font-size: 15px;
-    width: 80%;
-    margin: 0 auto; }
-  .mw-banner-medio h2 {
-    font-size: 15px;
-    width: 80%;
-    margin: 0 auto; }
   /*---- CONTACTO -----*/
   .columna1 {
     min-width: 65vw; }
@@ -513,7 +609,27 @@ footer {
     text-align: center; }
   .titulo2 h3 {
     font-size: 35px;
-    text-align: center; } }
+    text-align: center; }
+  /*-- MILWAUKEE -- */
+  .mk-productos-contenedor .mw-banner-medio h2 {
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto; }
+  .mk-productos-contenedor .titulo-catalogo p {
+    font-size: 40px; }
+  /*-- MAKITA -- */
+  .mk-productos-contenedor .dw-banner-medio h2 {
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto; }
+  .mk-productos-contenedor .titulo-catalogo p {
+    font-size: 40px; }
+  /*-- METABO -- */
+  .mt-productos-contenedor .titulo-catalogo p {
+    font-size: 40px; }
+  /*-- DEWALT -- */
+  .dw-productos-contenedor .titulo-catalogo p {
+    font-size: 40px; } }
 
 @media screen and (max-width: 520px) {
   main {

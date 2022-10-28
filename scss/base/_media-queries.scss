@@ -59,31 +59,14 @@
     body {
         min-width: 350px;
     }
-
     main {
         margin-top: 0;
     }
-
-    .dw-banner-medio h2 {
-        font-size: 15px;
-        width: 80%;
-        margin: 0 auto;
-    }
-    .mw-banner-medio h2{
-        font-size: 15px;
-        width: 80%;
-        margin: 0 auto;
-    
-    }
-
-    /*---- CONTACTO -----*/
+/*---- CONTACTO -----*/
     .columna1 {
         min-width: 65vw;
     }
-
-
-
-    /*----INDEX----*/
+/*----INDEX----*/
     .titulo1 h2 {
         font-size: 22px;
         margin-top: 25px;
@@ -93,7 +76,40 @@
         font-size: 35px;
         text-align: center;
     }
-
+/*-- MILWAUKEE -- */
+    .mk-productos-contenedor{
+        .mw-banner-medio h2{
+            font-size: 15px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .titulo-catalogo p {
+            font-size: 40px;
+        } 
+    }    
+/*-- MAKITA -- */
+    .mk-productos-contenedor{
+        .dw-banner-medio h2 {
+            font-size: 15px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .titulo-catalogo p {
+            font-size: 40px;
+        } 
+    }
+/*-- METABO -- */
+    .mt-productos-contenedor{
+        .titulo-catalogo p {
+            font-size: 40px;
+        } 
+}
+/*-- DEWALT -- */
+    .dw-productos-contenedor{
+        .titulo-catalogo p {
+            font-size: 40px;
+        } 
+    }
 }
 
 @media screen and (max-width:520px) {
@@ -165,18 +181,6 @@
             
         }
     }
-
-
-    
-
-    
-
-    
-
-    
-    
-    
-
     /*--- EMPRESA ---*/
 
     .columna1 {
@@ -199,6 +203,7 @@
         .mw-banner-medio h2 {
         font-size: 12px;
         width: 80%;
-        margin: 0 auto;}
+        margin: 0 auto;
+    }
     }
 }
