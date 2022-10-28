@@ -1,8 +1,5 @@
 # archivos de texto
 *.txt
-bootstrapgrid.html
-bootstrapgrid.css
-newdewalt.html
 
 # carpeta node_modules
 node_modules/
